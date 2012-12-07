@@ -1,0 +1,226 @@
+
+p, h1, h2, h4, h5, h6  { margin:0; border: 0; font-family: tahoma, Helvetica sans-serif;}
+p.clear {text-align: justify; float:left; clear: both; font-size: 70%; }
+p.bold {font-weight: bold;}                                                                                             /* find where this is used and delete, use the generic one*/
+h3 { font-family: tahoma, Helvetica sans-serif;}
+img {height: 100%; width: 100%;}
+
+a:link, a:visited, a:hover, a:active {text-decoration:none; color: white; font-family:tahoma, Helvetica sans-serif;}
+a:hover {font-size: 105%;}
+a.big:hover {font-size: 140%;}
+a.grey, a.grey:link, a.grey:hover {color: #39383c;}
+a.bl, a.bl:link, a.bl:hover {color: black;}
+a.gr, a.gr:link, a.gr:hover {color: #1dd026;}
+
+.space {padding: 10px;}
+.spaceL {padding-left: 10px;}
+.spaceR {padding-right: 10px;}
+
+.exsm { font-size: 60%;}
+.sm { font-size: 80%;}
+.lg {font-size: 110%;}
+.exlg {font-size: 150%;}
+.bold {font-weight: bold;}
+
+.left {text-align: left; float:left;}
+.right {text-align: right;float: right;}                                                                                /*tried to use for service updates but p didnt stay as p or clear stuff above*/
+p.clear {text-align: justify; float:left; clear: both; font-size: 70%; }
+
+.script {font-family:brush script MT, URW Chancery L, cursive;}
+.txt_cen {text-align: center;}
+.shad{text-shadow: black 0.1em 0.1em 0.2em}
+.shad_w{text-shadow: 0.1em 0.1em white}
+.wh_txt{color:white;text-shadow: black 0.1em 0.1em 0.2em}                                                                                                    /*h3.a {color: white; text-shadow: black 0.1em 0.1em 0.2em} http://www.w3.org/Style/Examples/007/text-shadow.en.html*/
+.gr_txt{color: #1dd026;}
+.bl_txt{color: black;}
+.grey_txt{color: #39383c;}
+.wh_bgd {color: #39383c;background-color: white;;}
+.img_back {position: absolute; top: 0;left: 0; z-index: 4}
+.txt_fore_bot {position: absolute; bottom: 0;left: 0; z-index: 5}
+.txt_fore_top {position: absolute; top: 0;left: 0; z-index: 5} /*without positioning where does it go??*/
+.bottomL {position: absolute; bottom: 0;left: 0}
+
+
+
+body { background-image:url('gry_clou_v.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 1;
+}
+#wrapper {
+    position: absolute;
+    left: 8%;
+    width: 84%;
+    margin: 0 auto;
+    height: 1500px;
+    background-image:url('grey_dot.jpg');
+    background-repeat: repeat;
+    z-index: 2;
+}
+    #header {
+        position: absolute;
+        right: 11.5%;
+        width: 55%;
+        top: 1.3%;
+        height: 2.5%;
+        /*background: #39383c;*/
+        z-index: 3;
+        line-height: 1.2%;
+        vertical-align:middle;                                                                                          /*i put in this line height and vertical alignment and it changed to times new roman  on: ;*/
+}
+
+            #hed_ll, #hed_l, #hed_mid, #hed_r, #hed_rr {
+                position: absolute;
+                left: 0;
+                width: 20%;
+                top: 0;
+                height: 100%;
+                background-image:url('bac_gry_hed.jpg');
+                background-repeat: no-repeat;
+                background-size: 200%;
+            }
+            #hed_l {left: 20%; }
+            #hed_mid { left: 40%; }
+            #hed_r { left: 60%;width: 25%; }
+            #hed_rr {left: 85%; width: 15%; }
+
+    #Logo {
+        position: absolute;
+        left: 11.5%;
+        width: 12%;
+        top: 1.3% ;
+        height: 4.5%;
+        background: #eeeaff;
+    }
+    #Login {
+        position: absolute;
+        right: 11.5%;
+        width: 60%;
+        top: 5.3%;
+        height: 2%;
+        background-image:url('grey_dot.jpg');
+        background-repeat: repeat;
+        text-align: right;
+        text-emphasis: ;
+    }
+    #centre {
+        position: absolute;
+        left: 11.5%;
+        width: 77%;
+        top: 8.3%;
+        height: 42%;
+     /*   background-image:url('bac_gry.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;*/
+        z-index: 3;
+    }
+        #burren {}                                                                                      /* put this in in order to target, cos the other method didnt work*/
+        #cen_top, #cen_bot { position: absolute;left: 0;width: 100%;}
+        #cen_top { top: 0; height: 40%;}
+        #cen_bot { bottom: 0; height: 50%;text-align: left; }
+        /*#cen_bot a{color: #39383c;}*/
+
+
+                #cen_bot_ll, #cen_bot_l, #cen_bot_r, #cen_bot_rr  {
+                position: absolute;
+                background-repeat: no-repeat;
+                width: 21.1%;
+                top: 0;
+                height: 100%;
+            }
+
+            /*#cen_bot_ll { background-image:url('coronas.jpg');background-size: 107%; left: 0;}  */
+            #cen_bot_l {background-image:url('script.jpg'); background-size: 112%;left: 26.3%; }
+            #cen_bot_r {background-image:url('landCoastP1.jpg');background-size: 105%;left: 52.6%; }
+            #cen_bot_rr {background-image:url('landMucrossP.jpg');background-size: 113%; left: 78.9%;}
+
+
+    #lower {                                                                                                            /*SERVICE UPDATES*/
+        position: absolute;
+        left: 11.5%;
+        width: 77%;
+        top: 54.3%;
+        height: 18%;
+        background-image:url('bac_gry.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+
+        #low_top_l, #low_bot_l {
+            position: absolute;
+            left: 0.5%;
+            width: 47.4%;
+        }
+        #low_top_l { top: 1.5%;height: 10%; }
+        #low_bot_l { top: 30%;height: 68.5%;}
+
+        #low_top_r, #low_mid_r, #low_bot_r {
+            position: absolute;
+            right: 35.7%;
+            width: 11.7%;
+            height: 27%;
+            background: #28272b;
+            padding: 3px;
+            text-align: center;
+         }
+        #low_top_r {top: 1.5%;}
+        #low_mid_r { top: 36.5%; }
+        #low_bot_r{bottom: 1.5%;}
+
+        #low_top_rr, #low_mid_rr, #low_bot_rr  {
+            position: absolute;
+            right: 0.5%;
+            width: 31.7%;
+            height: 27%;
+            background: #28272b;
+            padding: 3px;
+            overflow-y: scroll;
+        }
+        #low_top_rr {top: 1.5%;}
+        #low_mid_rr{top: 36.5%;}
+        #low_bot_rr{bottom: 1.5%;}
+
+
+    #footer {
+       position: absolute;
+        left: 11.5%;
+        width: 77%;
+        top: 77.5%;
+        height: 7.5%;
+        /*background: #6d6c64;*/
+        background-image:url('bac_gry.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+            #fot_top_l, #fot_mid_l, #fot_bot_l  {
+                position: absolute;
+                left: 0.5%;
+                width: 15%;
+                height: 22%;
+                background: #57555f;
+            }
+            #fot_top_l { top: 5%;}
+            #fot_mid_l { top: 39%;}
+            #fot_bot_l {top: 73%;}
+
+            #fot_r, #fot_rr, #fot_rrr  { position: absolute;
+                top: 40%;
+                bottom: 5%;
+                height: 55%;
+                background-repeat: no-repeat;
+                background-size: 70%;
+                width: 8%
+            }
+            #fot_top_r {position: absolute; top: 5%; right: 15%; width: 13%; height: 22%; background-color: #57555f;
+                text-align: center;}
+            #fot_top_rr {position: absolute; top: 5%; right: 0.5%; width: 13%; height: 22%; background-color: #57555f;
+                text-align: center;}
+            #fot_r { right: 20%; background-image:url('f.png');}
+            #fot_rr {right: 10%;;background-image:url('twitter-logo-1.jpg'); }
+            #fot_rrr {right: 0.5%;}
+
+

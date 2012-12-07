@@ -1,0 +1,30 @@
+
+<!--
+#wrapper { position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-color: #adff2f;}
+
+#header { position: absolute;
+    top: 20px;
+    right:20px ;
+    bottom:20px;
+    left:20px;
+     background-color: #ffe3c5;}
+-->
+
+
+#box_1 {	position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: blue;	}
+#box_2 {	position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    background: white;	}
